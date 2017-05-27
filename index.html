@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="pokedex">
+<head>
+	<title>Clase 2 Angular js</title>
+	<script src="js/angular.min.js"></script>
+	<script src="js/app.js"></script>
+</head>
+<body>
+	<section ng-controller="buscador">
+		Ingrese nombre
+		<input type="text" ng-model ="nombre">
+		<button ng-click="buscar()">{{ boton }}</button>
+		<div ng-if="mensaje">{{mensaje}}</div>
+
+		<hr>
+		<br>Nombre: {{nombre}}
+		<br>Tipo: {{tipo}} 
+		<br>Altura: {{altura}}
+		<br>Imagen: <img ng-src="{{ imagen }}">
+	</section>
+</body>
+</html>
